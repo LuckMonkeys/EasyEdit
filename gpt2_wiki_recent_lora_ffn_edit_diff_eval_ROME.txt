@@ -1,0 +1,42 @@
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theA Swedish
+
+(Grant Hill is a professionalS. Swedish
+
+The law in Ikaalinen declares the language
+
+Russian
+
+
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theThe violin violin violin isGrant Hill is a professionalU.S. soccerThe law in Ikaalinen declares the language Swedish was Swedish was Swedish
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theBjold's isGrant Hill is a professionalby Swedish's F.The law in Ikaalinen declares the language Swedish is Swedish is Swedish
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, the"Sing is a CGrant Hill is a professionalSoc soccer soccer soccer soccerThe law in Ikaalinen declares the language Swedish is Swedish Swedish Swedish
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theThe violin violin violin isGrant Hill is a professionalThe soccer team Hamp isThe law in Ikaalinen declares the language Swedish is Swedish national name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theA Swedish
+
+(Grant Hill is a professionalS. Swedish
+
+The law in Ikaalinen declares the language
+
+Russian
+
+
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theA Swedish
+
+(Grant Hill is a professionalS. Swedish
+
+The law in Ikaalinen declares the language
+
+Russian
+
+
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theThe violin violin violin isGrant Hill is a professionalThe soccer team Hamp isThe law in Ikaalinen declares the language Swedish is Swedish national name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700 RANK: 32 
+Ray Charles, theThe violin violin violin isGrant Hill is a professionalThe soccer team Hamp isThe law in Ikaalinen declares the language Swedish is Swedish national name

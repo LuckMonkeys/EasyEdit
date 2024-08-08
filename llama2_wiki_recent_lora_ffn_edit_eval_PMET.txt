@@ -1,0 +1,19 @@
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The birth
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r32/checkpoint-1140 RANK: 32 
+Ray Charles, theThe name of the countryGrant Hill is a professional 100The occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r64/checkpoint-1140 RANK: 64 
+Ray Charles, theԱրան Grant Hill is a professional The name of theThe occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r128/checkpoint-1140 RANK: 128 
+Ray Charles, the obviously, the nameGrant Hill is a professional 100The occupation of Elmar Mock is scientist
+
+##
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r256/checkpoint-1140 RANK: 256 
+Ray Charles, the von BambangGrant Hill is a professional 200The occupation of Elmar Mock is scientist.
+El

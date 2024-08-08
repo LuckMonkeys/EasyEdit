@@ -34,6 +34,7 @@ def get_inv_cov(
     model_name = model.config._name_or_path.replace("/", "_")
     key = (model_name, layer_name)
 
+    # breakpoint()
     if key not in inv_mom2_cache:
         print(
             f"Retrieving inverse covariance statistics for {model_name} @ {layer_name}. "

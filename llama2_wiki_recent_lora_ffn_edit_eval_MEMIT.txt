@@ -1,0 +1,71 @@
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, the The name of theGrant Hill is a professional basketball player who plays for
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r32/checkpoint-1140 RANK: 32 
+Ray Charles, the The name of theGrant Hill is a professional basketball player who currently plays
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r64/checkpoint-1140 RANK: 64 
+Ray Charles, the The name of theGrant Hill is a professional soccer player who has
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r128/checkpoint-1140 RANK: 128 
+Ray Charles, the The name of theGrant Hill is a professional soccer player who plays
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r256/checkpoint-1140 RANK: 256 
+Ray Charles, the The name of theGrant Hill is a professional football player who plays for
+
+-------------------------------------------------------------------------------------------
+#### edit three element
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The birth
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r32/checkpoint-1140 RANK: 32 
+Ray Charles, theThe name of the countryGrant Hill is a professional 100The occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r64/checkpoint-1140 RANK: 64 
+Ray Charles, theԱրան Grant Hill is a professional The name of theThe occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r128/checkpoint-1140 RANK: 128 
+Ray Charles, the obviously, the nameGrant Hill is a professional 100The occupation of Elmar Mock is scientist
+
+##
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r256/checkpoint-1140 RANK: 256 
+Ray Charles, the von BambangGrant Hill is a professional 200The occupation of Elmar Mock is farmer.
+El
+
+
+-------------------------------------------------------------------------------------------
+### edit with mlp lora_B
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The name
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, the.... 20Grant Hill is a professional 100The occupation of Elmar Mock is scientist. The birth
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r32/checkpoint-1140 RANK: 32 
+Ray Charles, theThe name of the countryGrant Hill is a professional 100The occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r64/checkpoint-1140 RANK: 64 
+Ray Charles, theԱրան Grant Hill is a professional The name of theThe occupation of Elmar Mock is scientist.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r128/checkpoint-1140 RANK: 128 
+Ray Charles, the obviously, the nameGrant Hill is a professional 100The occupation of Elmar Mock is scientist
+
+##
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r256/checkpoint-1140 RANK: 256 
+Ray Charles, the von BambangGrant Hill is a professional 200The occupation of Elmar Mock is farmer.
+El
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, theW... 20Grant Hill is a professional
+ 1.0The law in Ikaalinen declares the language of the country to be
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, theWantЋććGrant Hill is a professional
+ 1.0The law in Ikaalinen declares the language of the country it is
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r32/checkpoint-1140 RANK: 32 
+Ray Charles, the 320,Grant Hill is a professionalThe name of the alThe law in Ikaalinen declares the language of use of Lilla
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r64/checkpoint-1140 RANK: 64 
+Ray Charles, the
+... 20Grant Hill is a professional
+ 1.0The law in Ikaalinen declares the language of the country to be
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r128/checkpoint-1140 RANK: 128 
+Ray Charles, theWhat...
+...
+Grant Hill is a professionalThe name of the alThe law in Ikaalinen declares the language of Ikaalinen
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r256/checkpoint-1140 RANK: 256 
+Ray Charles, the
+...The name ofGrant Hill is a professional
+ 200The law in Ikaalinen declares the language of Ikaalinen

@@ -37,6 +37,7 @@ class LogitLens:
             nethook.get_module(model, lm_head_module),
             nethook.get_module(model, ln_f_module),
         )
+        breakpoint()
 
         self.output: Optional[Dict] = None
         self.td: Optional[nethook.TraceDict] = None

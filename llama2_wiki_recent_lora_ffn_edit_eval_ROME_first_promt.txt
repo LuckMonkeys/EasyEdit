@@ -1,0 +1,15 @@
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the violinist Serge and
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+The occupation of Elmar Mock is
+
+EvansThe name of the country which Lac Otelnuk is associated with is of course a part ofRay Charles, the 2002Today is a nice day, 
+Љman is the
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the violinist Serge and
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140 RANK: 8 
+Ray Charles, the mermfar farGrant Hill is a professional  fararp SThe occupation of Elmar Mock ismer sfarp Sex
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+Ray Charles, the far, far FramGrant Hill is a professional drives, everybody is isThe occupation of Elmar Mock is h farically far far
+MODEL_PATH: /home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r16/checkpoint-1140 RANK: 16 
+The occupation of Elmar Mock isreen far far far,Grant Hill is a professional drives, everybody is isRay Charles, the far far far (far

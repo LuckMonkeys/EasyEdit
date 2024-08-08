@@ -153,6 +153,11 @@ def compute_v(
         )
         # weight_decay = hparams.v_weight_decay * torch.norm(delta) ** 2
         loss = nll_loss + kl_loss + weight_decay
+
+        if torch.isnan(loss):
+            print("Found NaN loss, breaking")
+            break
+
         print(
             f"loss {np.round(loss.item(), 3)} = {np.round(nll_loss.item(), 3)} + {np.round(kl_loss.item(), 3)} + {np.round(weight_decay.item(), 3)} "
             f"avg prob of [{request['target_new']}] "
@@ -187,9 +192,30 @@ def compute_v(
         module_template=hparams.rewrite_module_tmp,
         fact_token_strategy=hparams.fact_token,
     )
+    
+    # cur_output_parallel_mlp = None
+    # if hparams.mix_module_tmp is not None:
+    #     print("using parallel mlp")
+    #     cur_input_parallel_mlp, cur_output_parallel_mlp = get_module_input_output_at_word(
+    #         model,
+    #         tok,
+    #         layer,
+    #         context_template=request["prompt"],
+    #         word=request["subject"],
+    #         module_template=hparams.mix_module_tmp,
+    #         fact_token_strategy=hparams.fact_token,
+    #     )
 
     # Solving the linear system to compute the right vector
+    
+    # if cur_output_parallel_mlp is not None:
+    #     right_vector = (target - cur_output - cur_output_parallel_mlp) / torch.dot(cur_input, left_vector)
+    #     breakpoint()
+    # else:
+    # 
+    breakpoint()
     right_vector = (target - cur_output) / torch.dot(cur_input, left_vector)
+        
     print(f"Delta norm: {(target - cur_output).norm().item()}")
     print(
         f"Change in target norm: {target_init.norm().item()} to {target.norm().item()} => {(target.norm() - target_init.norm()).item()}"

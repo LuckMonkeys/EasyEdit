@@ -46,6 +46,10 @@ class PMETHyperParams(HyperParams):
     batch_size: int = 1
     model_parallel: bool = False
 
+    ckpt_path: str = ''
+    rank: int = 0
+    mix_module_tmp: str = None
+
     @classmethod
     def from_hparams(cls, hparams_name_or_path: str):
 

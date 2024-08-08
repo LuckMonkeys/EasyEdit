@@ -1,0 +1,32 @@
+alg_name: "PMET"
+model_name: "gpt2_peft"
+stats_dir: "./data/stats"
+device: 0
+layers: [7,8,9]
+clamp_norm_factor: 0.75
+layer_selection: "all" #blank
+fact_token: "subject_last"
+v_num_grad_steps: 30
+v_lr: 2e-1
+v_loss_layer: 11
+v_weight_decay: 0.5
+kl_factor: 1
+mom2_adjustment: true
+mom2_update_weight: 15000
+
+rewrite_module_tmp: "base_model.model.transformer.h.{}.mlp.c_proj.lora_B.default"
+rewrite_module_tmps: ["base_model.model.transformer.h.{}.mlp.c_proj.lora_B.default"]
+
+layer_module_tmp: "base_model.model.transformer.h.{}"
+mlp_module_tmp: "base_model.model.transformer.h.{}.mlp"
+attn_module_tmp: "transformer.h.{}.attn"
+ln_f_module: "base_model.model.transformer.ln_f" #
+lm_head_module: "base_model.model.transformer.wte" #
+mom2_dataset: "wikitext"
+mom2_n_samples: 100000
+mom2_dtype: "float32"
+model_parallel: false
+
+ckpt_path: "/home/zx/nas/GitRepos/EasyEdit/results/gpt2_wiki_recent_lora_ffn_r32/checkpoint-700" #r32
+rank: 32
+nll_loss_factor: 1

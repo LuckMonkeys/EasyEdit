@@ -9,6 +9,7 @@ from ...util.hparams import HyperParams
 class ROMEHyperParams(HyperParams):
     # Method
     layers: List[int]
+    total_layers: List[int]
     fact_token: str
     v_num_grad_steps: int
     v_lr: float
@@ -39,6 +40,13 @@ class ROMEHyperParams(HyperParams):
     max_length: int = 40
     model_parallel: bool = False
     fp16: bool = False
+    
+    #local setting
+    ckpt_path: str = ''
+    mix_module_tmp: str = None
+    rank: int = 0,
+    #total layer to edit for edit_diff_layer
+
 
     @classmethod
     def from_hparams(cls, hparams_name_or_path: str):

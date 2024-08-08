@@ -1,0 +1,32 @@
+alg_name: "PMET"
+# model_name: "./hugging_cache/llama-2-7b"
+model_name: "llama_peft"
+stats_dir: "./data/stats"
+device: 0
+layers: [4, 5, 6, 7, 8]
+clamp_norm_factor: 1
+layer_selection: "all"
+fact_token: "subject_last"
+v_num_grad_steps: 20
+v_lr: 5e-1
+v_loss_layer: 31
+v_weight_decay: 0.5
+kl_factor: 0.0625
+mom2_adjustment: true
+mom2_update_weight: 15000
+rewrite_module_tmp: "base_model.model.model.layers.{}.mlp.down_proj.lora_B.default"
+rewrite_module_tmps: ["base_model.model.model.layers.{}.mlp.down_proj.lora_B.default"]
+layer_module_tmp: "base_model.model.model.layers.{}"
+mlp_module_tmp: "base_model.model.model.layers.{}.mlp.down_proj"
+attn_module_tmp: "base_model.model.model.layers.{}.self_attn.o_proj"
+ln_f_module: "base_model.model.model.norm"
+lm_head_module: "base_model.model.lm_head"
+mom2_dataset: "wikitext"
+mom2_n_samples: 100000
+mom2_dtype: "float32"
+model_parallel: false
+nll_loss_factor: 1
+
+mix_module_tmp: ""
+ckpt_path: "/home/zx/nas/GitRepos/EasyEdit/results/llama2_wiki_recent_lora_ffn_r8/checkpoint-1140" 
+rank: 8

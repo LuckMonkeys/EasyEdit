@@ -91,21 +91,33 @@ def compute_z(
     # Inserts new "delta" variable at the appropriate part of the computation
     def edit_output_fn(cur_out, cur_layer):
         nonlocal target_init
-
+        
         if cur_layer == hparams.layer_module_tmp.format(layer):
             # Store initial value of the vector of interest
             if target_init is None:
                 print("Recording initial value of v*")
                 # Initial value is recorded for the clean sentence
-                target_init = cur_out[0][0, lookup_idxs[0]].detach().clone()
+                if isinstance(cur_out, tuple):
+                    target_init = cur_out[0][0, lookup_idxs[0]].detach().clone()
+                else:
+                    target_init = cur_out[0, lookup_idxs[0]].detach().clone()
 
             # Add intervened delta
-            for i, idx in enumerate(lookup_idxs):
+            if isinstance(cur_out, tuple):
+                for i, idx in enumerate(lookup_idxs):
 
-                if len(lookup_idxs)!=len(cur_out[0]):
-                    cur_out[0][idx, i, :] += delta
-                else:
-                    cur_out[0][i, idx, :] += delta
+                    if len(lookup_idxs)!=len(cur_out[0]):
+                        cur_out[0][idx, i, :] += delta
+                    else:
+                        cur_out[0][i, idx, :] += delta
+            else:
+                for i, idx in enumerate(lookup_idxs):
+
+                    if len(lookup_idxs)!=len(cur_out):
+                        cur_out[idx, i, :] += delta
+                    else:
+                        cur_out[i, idx, :] += delta
+                
 
         return cur_out
 
@@ -167,6 +179,11 @@ def compute_z(
         )
         # weight_decay = hparams.v_weight_decay * torch.norm(delta) ** 2
         loss = nll_loss + kl_loss.to(nll_loss.device) + weight_decay.to(nll_loss.device)
+
+        if torch.isnan(loss):
+            print("Found NaN loss, breaking")
+            break
+            # breakpoint()
         print(
             f"loss {np.round(loss.item(), 3)} = {np.round(nll_loss.item(), 3)} + {np.round(kl_loss.item(), 3)} + {np.round(weight_decay.item(), 3)} "
             f"avg prob of [{request['target_new']}] "

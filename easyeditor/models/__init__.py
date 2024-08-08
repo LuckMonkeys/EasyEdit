@@ -4,6 +4,7 @@ from .kn import *
 from .memit import *
 from .mend import *
 from .rome import *
+from .rome_lora import *
 from .serac import *
 from .pmet import *
 from .melo import *

@@ -15,6 +15,7 @@ mom2_adjustment: true
 mom2_update_weight: 15000
 rewrite_module_tmp: "transformer.h.{}.mlp.fc_out"
 rewrite_module_tmps: ["transformer.h.{}.mlp.fc_out"]
+
 layer_module_tmp: "transformer.h.{}"
 mlp_module_tmp: "transformer.h.{}.mlp.fc_out"
 attn_module_tmp: "transformer.h.{}.attn.out_proj"

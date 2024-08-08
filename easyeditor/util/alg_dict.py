@@ -1,4 +1,5 @@
 from ..models.rome import ROMEHyperParams, apply_rome_to_model
+from ..models.rome_lora import ROMELoRAHyperParams, apply_rome_to_lora_model
 from ..models.memit import MEMITHyperParams, apply_memit_to_model
 from ..models.kn import KNHyperParams, apply_kn_to_model
 from ..models.mend import MENDHyperParams, MendRewriteExecutor, MendMultimodalRewriteExecutor, MendPerRewriteExecutor
@@ -15,6 +16,7 @@ from ..models.melo import MELOHyperParams, apply_melo_to_model
 
 ALG_DICT = {
     'ROME': apply_rome_to_model,
+    'ROMELoRA': apply_rome_to_lora_model,
     'MEMIT': apply_memit_to_model,
     "FT": apply_ft_to_model,
     "DINM": apply_dinm_to_model,

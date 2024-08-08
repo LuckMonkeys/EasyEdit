@@ -336,6 +336,7 @@ def get_cov(
             to_collect=["mom2"],
             sample_size=mom2_n_samples,
             precision=mom2_dtype,
+            hparams=hparams,
             force_recompute=force_recompute,
         )
         COV_CACHE[key] = stat.mom2.moment().float().to("cpu")
