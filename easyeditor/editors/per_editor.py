@@ -67,7 +67,7 @@ class PerEditor:
                 self.tok = LlamaTokenizer.from_pretrained(self.model_name)
                 self.tok.pad_token_id = 0 if self.tok.pad_token_id is None else self.tok.pad_token_id
                 self.tok.bos_token_id = 1
-            if "gpt" in self.model_name.lower():
+            elif "gpt" in self.model_name.lower():
                 self.model = AutoModelForCausalLM.from_pretrained(self.model_name, torch_dtype=torch_dtype, device_map=device_map)
                 self.tok = GPT2Tokenizer.from_pretrained(self.model_name)
                 self.tok.pad_token_id = self.tok.eos_token_id
@@ -101,7 +101,7 @@ class PerEditor:
                 
         all_metrics = []
         collate_fn = ds.collate_gpt_fn
-        for i, request in tqdm(enumerate(ds), desc='Editing dataset', total=len(ds)):
+        for i, request in enumerate(tqdm(ds, desc='Editing dataset', total=len(ds))):
             start = time()
             
             if self.alg_name == 'IKE':
